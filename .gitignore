@@ -9,5 +9,11 @@ npm-debug.*
 *.orig.*
 web-build/
 
+package-lock.json
+package.json
+tsconfig.json
+yarn.lock
+yarn-error.log
+
 # macOS
 .DS_Store
