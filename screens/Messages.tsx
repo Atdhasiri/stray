@@ -10,8 +10,17 @@ import {
 import { Icon, Message } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { DARK_GRAY } from "../assets/styles";
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParamList} from './RootStackParams';
 
-const Messages = () => (
+type messagesScreenProp = StackNavigationProp<RootStackParamList, 'Chat'>;
+
+const Messages = () => {
+
+  const navigation = useNavigation<messagesScreenProp>();
+  
+  return (
   <ImageBackground
     source={require("../assets/images/bg.png")}
     style={styles.bg}
@@ -28,7 +37,7 @@ const Messages = () => (
         data={DEMO}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('InChat')} >
             <Message
               image={item.image}
               name={item.name}
@@ -39,6 +48,6 @@ const Messages = () => (
       />
     </View>
   </ImageBackground>
-);
+)};
 
 export default Messages;
