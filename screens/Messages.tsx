@@ -6,6 +6,7 @@ import {
   ImageBackground,
   View,
   FlatList,
+  RefreshControl,
 } from "react-native";
 import { Icon, Message } from "../components";
 import DEMO from "../assets/data/demo";
@@ -16,7 +17,16 @@ import {RootStackParamList} from './RootStackParams';
 
 type messagesScreenProp = StackNavigationProp<RootStackParamList, 'Messages'>;
 
+const wait = (timeout:any) => {
+  return new Promise(resolve => setTimeout(resolve, timeout));
+}
 const Messages = () => {
+  const [refreshing, setRefreshing] = React.useState(false);
+
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    wait(2000).then(() => setRefreshing(false));
+  }, []);
 
   const navigation = useNavigation<messagesScreenProp>();
   
@@ -34,6 +44,12 @@ const Messages = () => {
       </View>
 
       <FlatList
+      refreshControl={
+        <RefreshControl
+          refreshing={refreshing}
+          onRefresh={onRefresh}
+        />
+      }
         data={DEMO}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (

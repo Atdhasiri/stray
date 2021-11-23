@@ -6,12 +6,26 @@ import {
   TouchableOpacity,
   ImageBackground,
   FlatList,
+  RefreshControl,
 } from "react-native";
 import { CardItem, Icon } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { DARK_GRAY } from "../assets/styles";
 
-const Matches = () => (
+
+const wait = (timeout:any) => {
+  return new Promise(resolve => setTimeout(resolve, timeout));
+}
+
+const Matches = () => {
+  const [refreshing, setRefreshing] = React.useState(false);
+
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    wait(2000).then(() => setRefreshing(false));
+  }, []);
+
+  return(
   <ImageBackground
     source={require("../assets/images/bg.png")}
     style={styles.bg}
@@ -25,6 +39,12 @@ const Matches = () => (
       </View>
 
       <FlatList
+      refreshControl={
+        <RefreshControl
+          refreshing={refreshing}
+          onRefresh={onRefresh}
+        />
+      }
         numColumns={2}
         data={DEMO}
         keyExtractor={(item, index) => index.toString()}
@@ -41,6 +61,7 @@ const Matches = () => (
       />
     </View>
   </ImageBackground>
-);
+  )
+};
 
 export default Matches;
