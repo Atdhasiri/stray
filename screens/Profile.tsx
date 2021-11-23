@@ -63,13 +63,10 @@ const Profile = () => {
         />
 
         <View style={styles.actionsProfile}>
-          <TouchableOpacity style={styles.circledButton}>
-            <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
-          </TouchableOpacity>
 
           <TouchableOpacity style={styles.roundedButton}>
-            <Icon name="chatbubble" size={20} color={WHITE} />
-            <Text style={styles.textButton}>Start chatting</Text>
+            <Text style={styles.textButton}>Profile Setting  </Text>
+            <Icon name="person" size={15} color={WHITE} />
           </TouchableOpacity>
         </View>
       </ScrollView>

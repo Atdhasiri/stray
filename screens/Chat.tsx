@@ -9,7 +9,7 @@ import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from './RootStackParams'
 import { GiftedChat } from 'react-native-gifted-chat'
 
-type chatScreenProp = StackNavigationProp<RootStackParamList, 'InChat'>;
+type chatScreenProp = StackNavigationProp<RootStackParamList, 'Chat'>;
 
 export interface IMessage {
   _id: string | number

@@ -68,14 +68,14 @@ const App = () => (
             />
 
             <Tab.Screen
-              name="Chat"
+              name="Messages"
               component={Messages}
               options={{
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
                     iconName="chatbubble"
-                    text="Chat"
+                    text="Messages"
                   />
                 ),
               }}
@@ -97,7 +97,7 @@ const App = () => (
           </Tab.Navigator>
         )}
       </Stack.Screen>
-      <Stack.Screen name="InChat" component={Chat} />
+      <Stack.Screen name="Chat" component={Chat} />
     </Stack.Navigator>
   </NavigationContainer>
 );

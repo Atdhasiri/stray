@@ -14,7 +14,7 @@ import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from './RootStackParams';
 
-type messagesScreenProp = StackNavigationProp<RootStackParamList, 'Chat'>;
+type messagesScreenProp = StackNavigationProp<RootStackParamList, 'Messages'>;
 
 const Messages = () => {
 
@@ -37,7 +37,7 @@ const Messages = () => {
         data={DEMO}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
-          <TouchableOpacity onPress={() => navigation.navigate('InChat')} >
+          <TouchableOpacity onPress={() => navigation.navigate('Chat')} >
             <Message
               image={item.image}
               name={item.name}
