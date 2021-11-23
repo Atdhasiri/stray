@@ -344,7 +344,11 @@ export default StyleSheet.create({
   modalHeader: {
     marginBottom: 15,
     fontWeight: "bold",
+  },
+  dropdown: {
+    marginBottom: 15,
   }
+
 
 
 });

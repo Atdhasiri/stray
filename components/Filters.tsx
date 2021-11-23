@@ -2,8 +2,21 @@ import React, { useState } from "react";
 import { Text, TouchableOpacity , View,Modal, Pressable} from "react-native";
 import Icon from "./Icon";
 import styles, { DARK_GRAY } from "../assets/styles";
+import DropDownPicker from 'react-native-dropdown-picker';
 
 const Filters = () => {
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [items, setItems] = useState([
+    {label: 'Dog', value: 'Dog'},
+    {label: 'Cat', value: 'Cat'},
+    {label: 'Giraffe', value: 'Giraffe'},
+    {label: 'your mom', value: 'your mom'},
+    {label: 'your sister', value: 'your sister'},
+    {label: 'your step sis', value: 'your step sis'}
+
+  ]);
 
   const [modalVisible, setModalVisible] = useState(false);
   return (
@@ -20,6 +33,23 @@ const Filters = () => {
           <View style={styles.modalView}>
             <Text style={styles.modalHeader}>Filters</Text>
             <Text style={styles.modalText}>Animal type</Text>
+            
+            <DropDownPicker style={styles.dropdown}
+              mode="BADGE"
+              badgeColors={["#2CD27F", "#DAACFA", "#CDD47A","#97DA97","#EC6969","#9F9999","#7A6CF9","#541C29"]}
+              open={open}
+              value={value}
+              items={items}
+              showBadgeDot={true}
+              searchable={true}
+              loading={loading}
+              setOpen={setOpen}
+              setValue={setValue}
+              setItems={setItems}
+              multiple={true}
+              max={5}
+            />
+
             <Text style={styles.modalText}>Age</Text>
             <Text style={styles.modalText}>Distance</Text>
             
