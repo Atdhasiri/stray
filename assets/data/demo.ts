@@ -1,43 +1,43 @@
 import { DataT } from "../../types";
-import IMAGE_01 from "../images/dog1.jpg";
-import IMAGE_02 from "../images/dog2.jpg";
-import IMAGE_03 from "../images/dog3.jpg";
-import IMAGE_04 from "../images/dog4.jpg";
-import IMAGE_05 from "../images/dog5.jpg";
-import IMAGE_06 from "../images/dog6.jpg";
-import IMAGE_07 from "../images/dog7.jpg";
-import IMAGE_08 from "../images/dog8.jpg";
-import IMAGE_09 from "../images/dog9.jpg";
-import IMAGE_10 from "../images/dog10.jpg";
+import IMAGE_01 from "../images/01.jpg";
+import IMAGE_02 from "../images/02.jpg";
+import IMAGE_03 from "../images/03.jpg";
+import IMAGE_04 from "../images/04.jpg";
+import IMAGE_05 from "../images/05.jpg";
+import IMAGE_06 from "../images/06.jpg";
+import IMAGE_07 from "../images/07.jpg";
+import IMAGE_08 from "../images/08.jpg";
+import IMAGE_09 from "../images/09.jpg";
+import IMAGE_10 from "../images/10.jpg";
 
 const data: DataT[] = [
   {
     id: 1,
-    name: "EIMI FUKADA",
+    name: "Leanne Graham",
     isOnline: true,
-    match: "100",
+    match: "78",
     description:
-      "big big boob.",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     message:
       "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
     image: IMAGE_01,
   },
   {
     id: 2,
-    name: "น้องโกโก้",
+    name: "Clementine Bauch",
     match: "93",
     description:
-      "ร่าเริง ขี้เล่น สุขภาพแข็งแรง รอดจากการเป็นอาหารของงูหลาม ตัวเงินตัวทอง  รอดจากการถูกรถชน.",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: false,
     message: "Someone like you. Someone who'll rattle the cages.",
     image: IMAGE_02,
   },
   {
     id: 3,
-    name: "มิเชล",
+    name: "Ervin Howell",
     match: "45",
     description:
-      "มิเชล ที่กลายเป็นหมาไร้บ้าน  ไร้ที่พักพิง แม้อีกไม่กี่วันจะสิ้นเดือน แต่ทีคอกวัดแน่นขนัดเต็มไปด้วยลูกหมาหนีตาย  มิเชลไม่มีที่ไป  ขอชีวิตและโอกาสให้หมาไทยเจียมเนื้อเจียมตัว",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: false,
     message:
       "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
@@ -45,30 +45,30 @@ const data: DataT[] = [
   },
   {
     id: 4,
-    name: "บิ๊ก",
+    name: "John Lebsack",
     match: "88",
     description:
-      "รักเคยพัดผ่านมา แล้วลับลาดั่งลม ทิ้งเพียงความขื่นขมอยู่ในใจ เฝ้ารอใครสักคน เมื่อสายลมพัดมาใกล้ อาจเจอใครสักคนที่ไม่ผ่านเลย ให้บิ๊กหน่อยได้ไหม",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: true,
     message: "Bats frighten me. It's time my enemies shared my dread.",
     image: IMAGE_04,
   },
   {
     id: 5,
-    name: "ลูก้า",
+    name: "James Dietrich",
     match: "76",
     description:
-      "ลูก้าเป็นหมาหลงที่เดินหาอาหารไปทั่ว อดมื้อกินมื้อและคอยหลบเจ้าถิ่นมาตลอด วันนึงถูกคนเอาไม้ตีจนกรามหัก",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: false,
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
   },
   {
     id: 6,
-    name: "ปีโป้",
+    name: "Patricia Schulist",
     match: "95",
     description:
-      "ถูกช่วยมาจากกรณีที่เจ้าของถูกฆ่าข่มขืน น้องๆอยู่ตามลำพังหลายวันกว่าจะมีคนไปพบก็ทนหิวและอยู่ในสภาพที่ย่ำแย่ เป็นโศกนาฏกรรมที่ร้ายแรงมากสำหรับหมาที่อยู่ๆวันนึงก็ต้องกลายเป็นหมาไร้บ้านเพราะคนเลวคนนึง",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: true,
     message:
       "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
@@ -76,10 +76,10 @@ const data: DataT[] = [
   },
   {
     id: 7,
-    name: "SIMBA",
+    name: "Chelsey Weissnat",
     match: "67",
     description:
-      "น้อง SIMBA อายุ 7 ขวบ น้ำหนักประมาณ 28 กิโลกรัม พันธุ์เทอร์เรียร์ขนาดใหญ่ที่มีนิสัยขี้เล่นและเป็นมิตรกับมนุษย์และสุนัขตัวอื่นๆ ",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: true,
     message:
       "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
@@ -87,10 +87,10 @@ const data: DataT[] = [
   },
   {
     id: 8,
-    name: "มีตังค์",
+    name: "Nicky Runol",
     match: "85",
     description:
-      "มีตังค์ จากป่าปิด หลังมบ.ชวนชื่น หนึ่งในผู้รอดชีวิตที่ได้พานพบและได้ช่วยเหลือได้เป็นหมาบ้านที่ได้รับโอกาส",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     age: "27",
     location: "Irvine, CA",
     info1: 'Straight, Single, 5"10',
@@ -104,10 +104,10 @@ const data: DataT[] = [
   },
   {
     id: 9,
-    name: "เหลง",
+    name: "Glenna Reichert",
     match: "74",
     description:
-      "รอดชีวิต​จากความอดอยากเดิมสภาพ​ผอมแคระแกรน  ได้รับการเตรี​ยมพร้อมอย่างดี​ทุก​อย่างพร้อมหาบ้าน​🏠​  เมตตาให้ทั้งคู่​ไม่ต้องตกค้างเป็นหมาวัด",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: true,
     message:
       "This is what happens when an unstoppable force meets an immovable object.",
@@ -115,10 +115,10 @@ const data: DataT[] = [
   },
   {
     id: 10,
-    name: "โตโน่",
+    name: "Kurtis DuBuque",
     match: "98",
     description:
-      "เมือไรจะถึงคิวของโตโน่ บ้างค้าบ ในเมื่อทุกชีวิต​มีสิทธิ์​มีบ้าน​ บีเกิ้ลผสมตกยาก รอดชีวิตมาได้ ก็อยากมีชีวิตใหม่ที่สดใสและอบอุ่น",
+      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
     isOnline: false,
     message:
       "You want order in Gotham. Batman must take off his mask and turn himself in.",
