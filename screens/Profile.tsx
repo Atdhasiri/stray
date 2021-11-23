@@ -30,7 +30,7 @@ const Profile = () => {
     >
       <ScrollView style={styles.containerProfile}>
         <ImageBackground source={image} style={styles.photo}>
-          <View style={styles.top}>
+          {/* <View style={styles.top}>
             <TouchableOpacity>
               <Icon
                 name="chevron-back"
@@ -48,7 +48,7 @@ const Profile = () => {
                 style={styles.topIconRight}
               />
             </TouchableOpacity>
-          </View>
+          </View> */}
         </ImageBackground>
 
         <ProfileItem

@@ -48,26 +48,42 @@ function Chat(){
 
   const [messages, setMessages] = useState<IMessage[]>([]);
 
-  const startMessage : IMessage = {
-    _id: 1,
-    text: 'น้องยังอยู่นะคะ สนใจรับไปดูแลไหมคะ?',
-    createdAt: new Date(),
-    user: {
+  const replyMessage : IMessage = 
+    {
+      _id: 1,
+      text: 'น้องยังอยู่นะคะ สนใจรับไปดูแลไหมคะ?',
+      createdAt: new Date(),
+      user: {
+        _id: 2,
+        name: 'React Native',
+        avatar: 'https://placeimg.com/140/140/any',
+      },
+    }
+
+    
+    const startMessage : IMessage = 
+    {
       _id: 2,
-      name: 'React Native',
-      avatar: 'https://placeimg.com/140/140/any',
-    },
-  }
+      text: '🤍',
+      image:'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F10%2F13%2Fcorgi-dog-POPDOGNAME1020.jpg',
+      createdAt: new Date(),
+      user: {
+        _id: 1,
+        name: 'React Native',
+        avatar: 'https://placeimg.com/140/140/any',
+      },
+    }
 
   useEffect(() => {
-    setMessages([startMessage
+    setMessages([replyMessage,startMessage]
      ,
-    ])
+    )
   }, [])
 
   const onSend = useCallback((messages = []) => {
     setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
   }, [])
+
 
   return (
     <ImageBackground
