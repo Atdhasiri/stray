@@ -123,6 +123,7 @@ export default StyleSheet.create({
   // COMPONENT - FILTERS
   filters: {
     backgroundColor: WHITE,
+    
     padding: 10,
     borderRadius: 20,
     width: 90,
@@ -310,7 +311,7 @@ export default StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 20,
     padding: 35,
-    alignItems: "center",
+    alignItems: "stretch",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -324,24 +325,30 @@ export default StyleSheet.create({
     backgroundColor: "#F194FF",
   },
   buttonClose: {
+    left:'70%',
     marginTop: 5,
     backgroundColor: "#2196F3",
   },
   buttonDangerClose: {
+    left:'70%',
     marginTop: 5,
     backgroundColor: "#d2691e",
   },
 
   textStyle: {
+    
     color: "white",
     fontWeight: "bold",
     textAlign: "center"
   },
   modalText: {
+    left:'5%',
     marginBottom: 15,
-    textAlign: "center"
+    textAlign: "left"
   },
   modalHeader: {
+    
+    fontSize:20,
     marginBottom: 15,
     fontWeight: "bold",
   },
