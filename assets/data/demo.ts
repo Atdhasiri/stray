@@ -12,6 +12,11 @@ import IMAGE_10 from "../images/dog10.jpg";
 import IMAGE_13 from "../images/dog13.jpg";
 import IMAGE_14 from "../images/dog14.jpg";
 
+import IMAGE_15 from "../images/dog14.jpg";
+import IMAGE_16 from "../images/dog14.jpg";
+import IMAGE_17 from "../images/dog14.jpg";
+import IMAGE_18 from "../images/dog14.jpg";
+
 const data: DataT[] = [
   {
     id: 1,
