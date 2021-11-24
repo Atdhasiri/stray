@@ -78,11 +78,11 @@ const CardItem = ({
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button}>
-            <Icon name="heart" color={LIKE_ACTIONS} size={25} />
+            <Icon name="close" color={DISLIKE_ACTIONS} size={25} />
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button}>
-            <Icon name="close" color={DISLIKE_ACTIONS} size={25} />
+            <Icon name="heart" color={LIKE_ACTIONS} size={25} />
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.miniButton}>
