@@ -8,6 +8,7 @@ import styles, {
   LIKE_ACTIONS,
   STAR_ACTIONS,
   WHITE,
+  PRIMARY_COLOR
 } from "../assets/styles";
 
 const CardItem = ({
@@ -17,6 +18,7 @@ const CardItem = ({
   image,
   owner,
   name,
+  distance,
 }: CardItemT) => {
   // Custom styling
   const fullWidth = Dimensions.get("window").width;
@@ -32,7 +34,7 @@ const CardItem = ({
 
   const nameStyle = [
     {
-      paddingTop: hasVariant ? 10 : 15,
+      paddingTop: hasVariant ? 8 : 10,
       paddingBottom: hasVariant ? 5 : 7,
       color: "#363636",
       fontSize: hasVariant ? 15 : 30,
@@ -59,13 +61,14 @@ const CardItem = ({
         <Text style={styles.descriptionCardItem}>{description}</Text>
       )}
 
-      {/* STATUS */}
-      {!description && (
-        <View style={styles.status}>
-          <Text style={styles.statusText}>
-          </Text>
-        </View>
+      {/* DISTANCE */}
+            {description && (
+        <Text style={styles.distanceCardItem}>
+          <Icon name="location-outline" size={12} color={PRIMARY_COLOR} />
+           {distance} km. far from you
+        </Text>
       )}
+
 
       {/* ACTIONS */}
       {hasActions && (

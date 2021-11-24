@@ -33,6 +33,7 @@ const Home = () => {
                 name={item.name}
                 description={item.description}
                 owner={owners.find(owner => owner.id  === item.ownerId)?.name}
+                distance={item.distance}
               />
             </Card>
           ))}

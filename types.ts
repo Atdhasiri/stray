@@ -5,6 +5,7 @@ export type CardItemT = {
   image: any;
   owner?: string;
   name: string;
+  distance: number;
 };
 
 export type IconT = {
@@ -61,12 +62,14 @@ export type Animal = {
     description: string;
     message: string;
     image: any;
+    distance: number;
     age?: string;
     info1?: string;
     info2?: string;
     info3?: string;
     info4?: string;
     location?: string;
+
   };
 
   export type Owner = {

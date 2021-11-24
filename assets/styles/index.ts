@@ -45,6 +45,12 @@ export default StyleSheet.create({
     color: GRAY,
     textAlign: "center",
   },
+  distanceCardItem: {
+    marginTop: 10,
+    color: PRIMARY_COLOR,
+    textAlign: "center",
+    fontSize: 12 ,
+  },
   status: {
     paddingBottom: 10,
     flexDirection: "row",
@@ -71,7 +77,7 @@ export default StyleSheet.create({
   actionsCardItem: {
     flexDirection: "row",
     alignItems: "center",
-    paddingVertical: 30,
+    paddingVertical: 20,
   },
   button: {
     width: 60,

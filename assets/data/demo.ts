@@ -30,6 +30,7 @@ export const animals: Animal[] = [
     message:
       "น้องยังอยู่นะคะ สนใจรับไปดุแลไหมคะ",
     image: IMAGE_01,
+    distance: 5
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ export const animals: Animal[] = [
       "มาตามหารักแท้ที่ดูแลกันได้ เด็กหญิงวัยสองเดือน ร่าเริง แข็งแรงมากๆ ถ่ายพยาธิและทำวัคซีนรวมห้าโรคให้แล้วสองเข็ม",
     message: "ได้ครับผม",
     image: IMAGE_02,
+    distance: 2
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ export const animals: Animal[] = [
     message:
       "น้องมีคนรับไปเลี้ยงแล้วค่ะ ขอโทษด้วยนะคะ",
     image: IMAGE_03,
+    distance: 0.3
   },
   {
     id: 4,
@@ -61,12 +64,14 @@ export const animals: Animal[] = [
       "น้องหมาสีน้ำตาล มีแผงขนที่คอสีขาว เพศเมีย อายุประมาณ 8 เดือน นิสัยเชื่อง เรียบร้อย เป็นมิตรกับคน",
     message: "ขอบคุณครับ จะไปรับน้องวันอาทิตย์นะครับ",
     image: IMAGE_04,
+    distance: 2
   },
   {
     id: 5,
     name: "เต้าหู้",
     type: "dog",
     ownerId: 1,
+    distance: 5,
     description:
       "เดินหลงจากบ้านมาไกลและนานจนหาทางกลับไม่ถูก ไม่มีใครตามหา รอแล้วรออีก วนเวียนอยู่ที่เดิมจนคนที่เจอสงสารเลยช่วยมาหาบ้าน",
     message: "มึงสิ อิกะเทย!",
@@ -82,6 +87,7 @@ export const animals: Animal[] = [
     message:
       "Thx you krub ^^",
     image: IMAGE_06,
+    distance: 0.3
   },
   {
     id: 7,
@@ -93,12 +99,14 @@ export const animals: Animal[] = [
     message:
       "งั้นยังไม่รับก่อนนะครับ ไกลไปหน่อย",
     image: IMAGE_07,
+    distance: 2
   },
   {
     id: 8,
     name: "มิเชล",
     type: "dog",
     ownerId: 1,
+    distance: 5,
     description:
       "ทำยังไง​ให้มิเชล​  อายุขวากว่าได้มีบ้านอีกสักครั้ง​ ชีวิตเหมือนจะดี​ แต่เหมือนโลกทั้งใบดับสลาย ขอ​โอกาสให้หมาไทยตัวเล็กๆ​ได้มีชี​วิตใหม่ที​อบอุ่น​ปลอดภัย​ด้วยค่า",
     age: "27",
@@ -121,6 +129,7 @@ export const animals: Animal[] = [
     message:
       "โสดป่าว ไอหนู",
     image: IMAGE_13,
+    distance: 1
   },
   {
     id: 10,
@@ -132,6 +141,7 @@ export const animals: Animal[] = [
     message:
       "เค",
     image: IMAGE_14,
+    distance: 1
   },
 ];
 
