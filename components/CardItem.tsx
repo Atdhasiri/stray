@@ -15,8 +15,7 @@ const CardItem = ({
   hasActions,
   hasVariant,
   image,
-  isOnline,
-  matches,
+  owner,
   name,
 }: CardItemT) => {
   // Custom styling
@@ -45,12 +44,10 @@ const CardItem = ({
       {/* IMAGE */}
       <Image source={image} style={imageStyle} />
 
-      {/* MATCHES */}
-      {matches && (
+      {/* owner */}
+      {owner && (
         <View style={styles.matchesCardItem}>
-          <Text style={styles.matchesTextCardItem}>
-            <Icon name="heart" color={WHITE} size={13} /> {matches}% Match!
-          </Text>
+          <Text style={styles.matchesTextCardItem}>{owner}</Text>
         </View>
       )}
 
@@ -65,9 +62,7 @@ const CardItem = ({
       {/* STATUS */}
       {!description && (
         <View style={styles.status}>
-          <View style={isOnline ? styles.online : styles.offline} />
           <Text style={styles.statusText}>
-            {isOnline ? "Online" : "Offline"}
           </Text>
         </View>
       )}

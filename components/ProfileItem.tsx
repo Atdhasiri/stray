@@ -11,20 +11,18 @@ const ProfileItem = ({
   info3,
   info4,
   location,
-  matches,
   name,
+  adopt,
 }: ProfileItemT) => (
   <View style={styles.containerProfileItem}>
     <View style={styles.matchesProfileItem}>
-      <Text style={styles.matchesTextProfileItem}>
-        <Icon name="heart" size={13} color={WHITE} /> {matches}% Match!
-      </Text>
+      <Text style={styles.matchesTextProfileItem}>{adopt} Adoptions</Text>
     </View>
 
     <Text style={styles.name}>{name}</Text>
 
     <Text style={styles.descriptionProfileItem}>
-      {age} - {location}
+      {age} ปี
     </Text>
 
     <View style={styles.info}>
@@ -36,24 +34,19 @@ const ProfileItem = ({
 
     <View style={styles.info}>
       <Text style={styles.iconProfile}>
-        <Icon name="pizza" size={12} color={DARK_GRAY} />
+        <Icon name="happy-outline" size={12} color={DARK_GRAY} />
       </Text>
       <Text style={styles.infoContent}>{info2}</Text>
     </View>
 
     <View style={styles.info}>
       <Text style={styles.iconProfile}>
-        <Icon name="airplane" size={12} color={DARK_GRAY} />
+        <Icon name="location-outline" size={12} color={DARK_GRAY} />
       </Text>
-      <Text style={styles.infoContent}>{info3}</Text>
+      <Text style={styles.infoContent}>{location}</Text>
     </View>
 
-    <View style={styles.info}>
-      <Text style={styles.iconProfile}>
-        <Icon name="calendar" size={12} color={DARK_GRAY} />
-      </Text>
-      <Text style={styles.infoContent}>{info4}</Text>
-    </View>
+
   </View>
 );
 

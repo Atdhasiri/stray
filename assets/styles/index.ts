@@ -326,13 +326,15 @@ export default StyleSheet.create({
   },
   buttonClose: {
     left:'70%',
-    marginTop: 5,
+    marginTop: 60,
     backgroundColor: "#2196F3",
+    zIndex: 0
   },
   buttonDangerClose: {
     left:'70%',
     marginTop: 5,
     backgroundColor: "#d2691e",
+    zIndex: 0
   },
 
   textStyle: {

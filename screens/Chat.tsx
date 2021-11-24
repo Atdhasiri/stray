@@ -3,7 +3,6 @@ import { View, ImageBackground } from "react-native";
 import CardStack, { Card } from "react-native-card-stack-swiper";
 import { City, Filters, CardItem } from "../components";
 import styles from "../assets/styles";
-import DEMO from "../assets/data/demo";
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from './RootStackParams'
@@ -56,7 +55,7 @@ function Chat(){
       user: {
         _id: 2,
         name: 'React Native',
-        avatar: 'https://placeimg.com/140/140/any',
+        avatar: 'https://scontent.fbkk22-5.fna.fbcdn.net/v/t39.30808-6/240173460_4717242151628388_2743492107685777910_n.png?_nc_cat=1&_nc_rgb565=1&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHP_g4momt45-wDrY1RlKUAks3R3GJfsFOSzdHcYl-wUz-7J6CJxqgPQ_9-tvQLqOouiEnDBlWNimTdxqHXJUmR&_nc_ohc=u7dbLuxB3RIAX9hzVBq&tn=ambbegRvOgxchCBu&_nc_ht=scontent.fbkk22-5.fna&oh=9f57b7dda24e2b9c0e64b8c095afda2a&oe=61A26425',
       },
     }
 

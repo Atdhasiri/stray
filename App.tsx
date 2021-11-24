@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Home, Matches, Messages, Profile, Chat } from "./screens";
+import { Home, Interested, Messages, Profile, Chat } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
 import 'react-native-gesture-handler';
@@ -54,14 +54,14 @@ const App = () => (
             />
 
             <Tab.Screen
-              name="Matches"
-              component={Matches}
+              name="Interested"
+              component={Interested}
               options={{
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
                     iconName="heart"
-                    text="Matches"
+                    text="Interested"
                   />
                 ),
               }}

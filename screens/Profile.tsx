@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { Icon, ProfileItem } from "../components";
-import DEMO from "../assets/data/demo";
+import {users} from "../assets/data/demo";
 import styles, { WHITE } from "../assets/styles";
 
 const Profile = () => {
@@ -19,9 +19,9 @@ const Profile = () => {
     info3,
     info4,
     location,
-    match,
     name,
-  } = DEMO[7];
+    adopt,
+  } = users[0];
 
   return (
     <ImageBackground
@@ -52,7 +52,6 @@ const Profile = () => {
         </ImageBackground>
 
         <ProfileItem
-          matches={match}
           name={name}
           age={age}
           location={location}
@@ -60,6 +59,7 @@ const Profile = () => {
           info2={info2}
           info3={info3}
           info4={info4}
+          adopt={adopt}
         />
 
         <View style={styles.actionsProfile}>

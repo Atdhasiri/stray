@@ -9,7 +9,7 @@ import {
   RefreshControl,
 } from "react-native";
 import { CardItem, Icon } from "../components";
-import DEMO from "../assets/data/demo";
+import {animals} from "../assets/data/demo";
 import styles, { DARK_GRAY } from "../assets/styles";
 
 
@@ -17,7 +17,7 @@ const wait = (timeout:any) => {
   return new Promise(resolve => setTimeout(resolve, timeout));
 }
 
-const Matches = () => {
+const Interested = () => {
   const [refreshing, setRefreshing] = React.useState(false);
 
   const onRefresh = React.useCallback(() => {
@@ -32,7 +32,7 @@ const Matches = () => {
   >
     <View style={styles.containerMatches}>
       <View style={styles.top}>
-        <Text style={styles.title}>Matches</Text>
+        <Text style={styles.title}>Interested</Text>
         <TouchableOpacity>
           <Icon name="ellipsis-vertical" color={DARK_GRAY} size={20} />
         </TouchableOpacity>
@@ -46,14 +46,13 @@ const Matches = () => {
         />
       }
         numColumns={2}
-        data={DEMO}
+        data={animals}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
           <TouchableOpacity>
             <CardItem
               image={item.image}
               name={item.name}
-              isOnline={item.isOnline}
               hasVariant
             />
           </TouchableOpacity>
@@ -64,4 +63,4 @@ const Matches = () => {
   )
 };
 
-export default Matches;
+export default Interested;

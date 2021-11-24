@@ -3,8 +3,7 @@ export type CardItemT = {
   hasActions?: boolean;
   hasVariant?: boolean;
   image: any;
-  isOnline?: boolean;
-  matches?: string;
+  owner?: string;
   name: string;
 };
 
@@ -28,8 +27,8 @@ export type ProfileItemT = {
   info3?: string;
   info4?: string;
   location?: string;
-  matches: string;
   name: string;
+  adopt: number
 };
 
 export type TabBarIconT = {
@@ -38,18 +37,56 @@ export type TabBarIconT = {
   text: string;
 };
 
-export type DataT = {
-  id: number;
-  name: string;
-  isOnline: boolean;
-  match: string;
-  description: string;
-  message: string;
-  image: any;
-  age?: string;
-  info1?: string;
-  info2?: string;
-  info3?: string;
-  info4?: string;
-  location?: string;
-};
+// export type DataT = {
+//   id: number;
+//   name: string;
+//   isOnline: boolean;
+//   match: string;
+//   description: string;
+//   message: string;
+//   image: any;
+//   age?: string;
+//   info1?: string;
+//   info2?: string;
+//   info3?: string;
+//   info4?: string;
+//   location?: string;
+// };
+
+export type Animal = {
+    id: number;
+    name: string;
+    type: string;
+    ownerId: number;
+    description: string;
+    message: string;
+    image: any;
+    age?: string;
+    info1?: string;
+    info2?: string;
+    info3?: string;
+    info4?: string;
+    location?: string;
+  };
+
+  export type Owner = {
+    id: number;
+    name: string;
+    image: any;
+    location?: string;
+  };
+
+  export type User = {
+    id: number;
+    name: string;
+    description: string;
+    message: string;
+    image: any;
+    age?: string;
+    info1?: string;
+    info2?: string;
+    info3?: string;
+    info4?: string;
+    location?: string;
+    adopt:number;
+  };

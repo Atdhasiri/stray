@@ -25,15 +25,13 @@ const Filters = () => {
     {label: 'Dog', value: 'Dog'},
     {label: 'Cat', value: 'Cat'},
     {label: 'Giraffe', value: 'Giraffe'},
-    {label: 'your mom', value: 'your mom'},
-    {label: 'your sister', value: 'your sister'},
-    {label: 'your step sis', value: 'your step sis'}
 
   ]);
   const [ageRange, setageRange] = useState([
     {label: 'Young', value: 'Young'},
     {label: 'Adult', value: 'Adult'},
-    {label: 'Old', value: 'Old'}
+    {label: 'Old', value: 'Old'},
+    {label: 'All', value: 'All'}
   ]);
 
   const [distance , setDistance] = useState(0);
@@ -75,7 +73,7 @@ const Filters = () => {
             <Text style={styles.modalText}>Age</Text>
             <DropDownPicker style={styles.dropdown}
               zIndex={1000}
-              zIndexInverse={3000}
+              zIndexInverse={1000}
               open={openAgeRange}
               onOpen={onOpenAgeRange}
               value={age}

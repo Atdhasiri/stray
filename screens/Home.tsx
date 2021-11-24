@@ -3,7 +3,7 @@ import { View, ImageBackground } from "react-native";
 import CardStack, { Card } from "react-native-card-stack-swiper";
 import { City, Filters, CardItem } from "../components";
 import styles from "../assets/styles";
-import DEMO from "../assets/data/demo";
+import {animals,owners} from "../assets/data/demo";
 
 const Home = () => {
   const [swiper, setSwiper] = useState<CardStack | null>(null);
@@ -25,14 +25,14 @@ const Home = () => {
           renderNoMoreCards={() => null}
           ref={(newSwiper): void => setSwiper(newSwiper)}
         >
-          {DEMO.map((item) => (
+          {animals.map((item) => (
             <Card key={item.id}>
               <CardItem
                 hasActions
                 image={item.image}
                 name={item.name}
                 description={item.description}
-                matches={item.match}
+                owner={owners.find(owner => owner.id  === item.ownerId)?.name}
               />
             </Card>
           ))}

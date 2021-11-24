@@ -9,7 +9,7 @@ import {
   RefreshControl,
 } from "react-native";
 import { Icon, Message } from "../components";
-import DEMO from "../assets/data/demo";
+import {animals} from "../assets/data/demo";
 import styles, { DARK_GRAY } from "../assets/styles";
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
@@ -50,7 +50,7 @@ const Messages = () => {
           onRefresh={onRefresh}
         />
       }
-        data={DEMO}
+        data={animals}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => navigation.navigate('Chat')} >

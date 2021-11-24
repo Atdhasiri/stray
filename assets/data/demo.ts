@@ -1,4 +1,4 @@
-import { DataT } from "../../types";
+import { Animal,Owner,User } from "../../types";
 import IMAGE_01 from "../images/dog1.jpg";
 import IMAGE_02 from "../images/dog2.jpg";
 import IMAGE_03 from "../images/dog3.jpg";
@@ -17,85 +17,88 @@ import IMAGE_16 from "../images/dog14.jpg";
 import IMAGE_17 from "../images/dog14.jpg";
 import IMAGE_18 from "../images/dog14.jpg";
 
-const data: DataT[] = [
+import User_Profile from "../images/User_Profile.jpg";
+
+export const animals: Animal[] = [
   {
     id: 1,
-    name: "EIMI FUKADA",
-    isOnline: true,
-    match: "78",
+    name: "อัลเฟรด",
+    type: "dog",
+    ownerId: 1,
     description:
       "nice nice nice",
     message:
-      "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
+      "น้องยังอยู่นะคะ สนใจรับไปดุแลไหมคะ",
     image: IMAGE_01,
   },
   {
     id: 2,
     name: "ซาร่า",
-    match: "93",
+    type: "dog",
+    ownerId: 2,
     description:
       "มาตามหารักแท้ที่ดูแลกันได้ เด็กหญิงวัยสองเดือน ร่าเริง แข็งแรงมากๆ ถ่ายพยาธิและทำวัคซีนรวมห้าโรคให้แล้วสองเข็ม",
-    isOnline: false,
-    message: "Someone like you. Someone who'll rattle the cages.",
+    message: "ได้ครับผม",
     image: IMAGE_02,
   },
   {
     id: 3,
     name: "มัสฟิน",
-    match: "45",
+    type: "dog",
+    ownerId: 3,
     description:
       "สปริทช์จากการไม่พร้อมเลี้ยง ต้องอยู่แต่ในคอกสี่เหลี่ยมแคบๆมานานเท่าใด ไม่เคยได้มีโอกาสออกมาวิ่งเล่น ไม่ได้วัคซีนมาสองปีแล้ว ทางเพจช่วยมากรูมมิ่ง ตรวจเลือด เตรียมทำหมันและตามหาเจ้านายใจดีที่พร้อมชดเชยให้ความรักความอบอุ่น  ",
-    isOnline: false,
     message:
-      "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
+      "น้องมีคนรับไปเลี้ยงแล้วค่ะ ขอโทษด้วยนะคะ",
     image: IMAGE_03,
   },
   {
     id: 4,
     name: "ปิ้ก",
-    match: "88",
+    type: "dog",
+    ownerId: 2,
     description:
       "น้องหมาสีน้ำตาล มีแผงขนที่คอสีขาว เพศเมีย อายุประมาณ 8 เดือน นิสัยเชื่อง เรียบร้อย เป็นมิตรกับคน ไม่พบปลอกคอ ไม่ทราบว่ามี",
-    isOnline: true,
-    message: "Bats frighten me. It's time my enemies shared my dread.",
+    message: "ขอบคุณครับ จะไปรับน้องวันอาทิตย์นะครับ",
     image: IMAGE_04,
   },
   {
     id: 5,
     name: "เต้าหู้",
-    match: "76",
+    type: "dog",
+    ownerId: 1,
     description:
       "เดินหลงจากบ้านมาไกลและนานจนหาทางกลับไม่ถูก ไม่มีใครตามหา รอแล้วรออีก วนเวียนอยู่ที่เดิมจนคนที่เจอสงสารเลยช่วยมาหาบ้าน",
-    isOnline: false,
-    message: "It's not who I am underneath but what I do that defines me.",
+    message: "มึงสิ อิกะเทย!",
     image: IMAGE_05,
   },
   {
     id: 6,
     name: "โตโน่",
-    match: "95",
+    type: "dog",
+    ownerId: 3,
     description:
       "เมือไรจะถึงคิวของโตโน่ บ้างค้าบ ในเมื่อทุกชีวิต​มีสิทธิ์​มีบ้าน​ บีเกิ้ลผสมตกยาก รอดชีวิตมาได้ ก็อยากมีชีวิตใหม่ที่สดใสและอบอุ่น",
-    isOnline: true,
     message:
-      "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
+      "Thx you krub ^^",
     image: IMAGE_06,
   },
   {
     id: 7,
     name: "เหลง",
-    match: "67",
+    type: "dog",
+    ownerId: 2,
     description:
       " รอดตายมาจากแดนไกล ทั้งผอมทั้งฝนตก ทั้งหิว  ช่วยมาด้วยความสงสาร แต่พวกเขาจะมีโอกาสมีบ้านไหม ",
-    isOnline: true,
     message:
-      "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
+      "งั้นยังไม่รับก่อนนะครับ ไกลไปหน่อย",
     image: IMAGE_07,
   },
   {
     id: 8,
     name: "มิเชล",
-    match: "85",
+    type: "dog",
+    ownerId: 1,
     description:
       "ทำยังไง​ให้มิเชล​  อายุขวากว่าได้มีบ้านอีกสักครั้ง​ ชีวิตเหมือนจะดี​ แต่เหมือนโลกทั้งใบดับสลาย ขอ​โอกาสให้หมาไทยตัวเล็กๆ​ได้มีชี​วิตใหม่ที​อบอุ่น​ปลอดภัย​ด้วยค่า",
     age: "27",
@@ -104,33 +107,76 @@ const data: DataT[] = [
     info2: "Tea Totaller, Loves Photography & Travel",
     info3: "Beaches, Mountain, Cafe, Movies",
     info4: "Last seen: 23h ago",
-    isOnline: true,
     message:
-      "And as for the television's so-called plan, Batman has no jurisdiction.",
+      "รับงานไหมครับ",
     image: IMAGE_08,
   },
   {
     id: 9,
     name: "น้องข้าวหอม",
-    match: "74",
+    type: "dog",
+    ownerId: 4,
     description:
       "น่ารักมากครับ",
-    isOnline: true,
     message:
-      "This is what happens when an unstoppable force meets an immovable object.",
+      "โสดป่าว ไอหนู",
     image: IMAGE_13,
   },
   {
     id: 10,
     name: "น้องพลอย",
-    match: "98",
+    type: "dog",
+    ownerId: 4,
     description:
       "น่ารักที่สุด",
-    isOnline: false,
     message:
-      "You want order in Gotham. Batman must take off his mask and turn himself in.",
+      "เค",
     image: IMAGE_14,
   },
 ];
 
-export default data;
+export const owners: Owner[] = [
+   {
+    id: 1,
+    name: "มูลนิธิ Soi Dog",
+    image: "https://scontent.fbkk22-5.fna.fbcdn.net/v/t39.30808-6/240173460_4717242151628388_2743492107685777910_n.png?_nc_cat=1&_nc_rgb565=1&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHP_g4momt45-wDrY1RlKUAks3R3GJfsFOSzdHcYl-wUz-7J6CJxqgPQ_9-tvQLqOouiEnDBlWNimTdxqHXJUmR&_nc_ohc=u7dbLuxB3RIAX9hzVBq&tn=ambbegRvOgxchCBu&_nc_ht=scontent.fbkk22-5.fna&oh=9f57b7dda24e2b9c0e64b8c095afda2a&oe=61A26425",
+    location: "สุขุมวิทย์",
+  },
+  {
+    id: 2,
+    name: "มูลนิธิบ้านสงเคราะห์สุนัขพิการ",
+    image: "https://f.ptcdn.info/582/051/000/oqwubwaaBQ4glILnLQ-o.jpg",
+    location: "คลองเตย",
+  },
+  {
+    id: 3,
+    name: "มูลนิธิเกาะสุนัข",
+    image: "http://www.bansuanporpeang.com/files/images/user1905/Photo0251.jpg",
+    location: "คลองสาม",
+  },
+  {
+    id: 4,
+    name: "มูลนิธิน้องปิงปิง",
+    image: "https://scontent.fbkk22-8.fna.fbcdn.net/v/t1.18169-9/10984632_811190852311492_1600729095523285402_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFsDtux_jECajiu0P3fpUV5aH3MSs5lgc5ofcxKzmWBzhzQPAGt-7sSfQgFQzsMqLiMEiL0yqXRuCgoGzqGkoi-&_nc_ohc=4m7SNPJ2-fwAX_lQOnX&_nc_ht=scontent.fbkk22-8.fna&oh=d360af478a4938b86cff0b77066502d3&oe=61C46771",
+    location: "ยะลา",
+  },
+];
+
+export const users: User[] = [
+  {
+    id: 1,
+    name: "Kwin Prapawong",
+    description:
+      "nice nice nice",
+    message:
+      "",
+    image: User_Profile,
+    age: "22",
+    location: "รัชดา, กรุงเทพ",
+    info1: 'โปรแกรมเมอร์อิสระ ,โสด, 56',
+    info2: "รักสัตว์ อยู่คนเดียว อยากรับสัตว์มาอยู่เป็นเพื่อนครับ",
+    adopt: 4,
+
+  },
+];
+
